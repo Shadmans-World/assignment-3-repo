@@ -20,28 +20,83 @@
       rel="stylesheet"
     />
 
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/4d53948c82.js" crossorigin="anonymous"></script>
+
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+
+      /* @media screen and (max-width:425px) {
+        .menu{
+            display: inline-block;
+        }
+        .menu-extra{
+            display: hidden;
+        }
+      }
+
+      @media screen and (min-width:425px) {
+        .menu{
+            display: hidden;
+        }
+        .menu-extra{
+            display: flex;
+        }
+        
+      } */
+      
     </style>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-clr':'#ABEF5F'
+          }
+        }
+      }
+    }
+  </script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope ">
     <!-- Header Section -->
-     <header>
+     <header class="bg-gradient-to-b from-gray-100 to-white">
+        <!-- Navbar -->
+         <nav class="container mx-auto lg:max-w-[88%] md:max-w-[88%] ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                 <a class="btn rounded-full text-base bg-btn-clr "><i class="fa-solid fa-arrow-right -rotate-45"></i></a> 
+                  <a class="btn btn-ghost text-xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-extrabold text-[#494949]">Home</a></li>
+                   
+                    <li><a class="text-[#737373]">Services</a></li>
+                    <li><a class="text-[#737373]">Portfolio</a></li>
+                    <li><a class="text-[#737373]">Blogs</a></li>
+                    <li><a class="text-[#737373]">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class=" navbar-end  gap-4 hidden sm:flex">
+                  <ul class="flex flex-row gap-4 ">
+                    <li class="bg-white border rounded-full px-2 py-1"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="bg-white border rounded-full px-2 py-1"><i class="fa-solid fa-cart-shopping"></i></li>
+                  </ul>  
+                  <a class="btn text-xl  font-extrabold bg-btn-clr rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right -rotate-45"></i>
 
+                  </a>
+                </div>
+              </div>
+
+         </nav>
      </header>
 
      <!-- Main Section -->
