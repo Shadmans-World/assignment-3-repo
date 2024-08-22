@@ -35,6 +35,17 @@
         border-radius: 100%;
         padding: 2px 2px;
       }
+
+      @media screen and (min-width:1024)  {
+        .about{
+          justify-content: flex-start;
+        }
+      }
+      @media screen and (max-width:1024px) {
+        .about{
+          text-align: center;
+        }
+      }
     </style>
 
     <script>
@@ -44,7 +55,9 @@
             colors: {
               clifford: "#da373d",
               "btn-clr": "#ABEF5F",
-              'paragraph':'#494949'
+              'paragraph':'#494949',
+              'clr':'rgb(30, 30, 30)',
+              'paragraph-opacity': '#737373'
             },
           },
         },
@@ -114,29 +127,57 @@
     </header>
 
     <!-- Main Section -->
-    <main class="mt-11">
+    <main class="mt-14 bg-slate-300/50">
         <!-- Design -->
-         <section class="lg:max-w-[88%] md:max-w-[88%] mb-5 flex flex-row md:flex-row lg:flex-col  mx-auto px-6 text-center justify-center items-center lg:justify-start lg:items-start ">
+         <section class="lg:max-w-[88%] md:max-w-[88%] mb-5 flex  flex-col lg:flex-row    mx-auto text-center px-11  justify-center items-center lg:items-start lg:justify-start pt-10 py-11 gap-11 ">
             <!-- Text part -->
-            <div class="flex flex-row lg:w-1/2">
-                <div class="">
-                    <div class="hidden lg:inline-block border-dashed border-gray-300 p-4 border-2">
-                        <img  src="assets/Vector.png" alt="">
+            <div class="flex flex-col   lg:w-1/2 gap-y-4 ">
+                <div class="relative">
+                    <div class="  hidden lg:inline-block  p-4 border-2 ">
+                        <img class="absolute -left-11 -top-4" src="assets/Vector.png" alt="">
                     </div>
-                    <div>
-                        <button class="btn btn-ghost  "><i class="fa-solid fa-arrow-right"></i>About Us</button>
+                    <div class="about ">
+                        <button class="btn btn-ghost  bg-white rounded-3xl "><i class="fa-solid fa-arrow-right "></i>About Us</button>
                     </div>
                     
                     
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="">
+                  <h1 class="text-4xl font-bold py-4">We design thoughtful, liveable spaces</h1>
+                  <p class="text-paragraph">The barn house captivates with its blend of rustic charm and 
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl w-full px-4 ">
+                  <figure>
+                    <img
+                      src="assets/commercial.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title font-extrabold justify-center">Commercial</h2>
+                    <p class="text-paragraph-opacity">The barn house captivates with its blend of rustic charm and modern.</p>
+                    
+                  </div>
+                </div>
+
+                <div class="card card-side bg-base-100 shadow-xl w-full px-4">
+                  <figure>
+                    <img
+                      src="assets/residential.png"                      alt="Movie" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title justify-center font-extrabold">Residential</h2>
+                    <p class="text-paragraph-opacity">The barn house captivates with its blend of rustic charm and modern.</p>
+                  
+                  </div>
+                </div>
+                
             </div>
 
             <!-- Image Part -->
-            <div class="lg-w-1/2">
-                <img src="assets/Rectangle.png" alt="">
+            <div class="lg-w-1/2 mt-8">
+                <img class="lg:hidden rounded-2xl " src="assets/Rectangle-1.png" alt="">
+                <img class="hidden lg:inline-block" src="assets/Rectangle.png" alt="">
             </div>
          </section>
     </main>
