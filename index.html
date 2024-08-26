@@ -67,7 +67,7 @@
             colors: {
               clifford: "#da373d",
               "btn-clr": "#ABEF5F",
-              prgph: "#494949",
+              'lil-paragraph': "#494949",
               clr: "rgb(30, 30, 30)",
               "paragraph-opacity": "#737373",
             },
@@ -157,7 +157,7 @@
     <main class="mt-14 bg-slate-300/50">
       <!-- Design -->
       <section
-        class="lg:max-w-[88%] md:max-w-[88%] mb-5 flex flex-col lg:flex-row mx-auto px-11 justify-center items-center lg:items-start lg:justify-start pt-10 py-11 gap-11"
+        class="lg:max-w-[88%] md:max-w-[88%] mb-5 flex flex-col lg:flex-row mx-auto px-11 justify-center items-center lg:items-center lg:justify-start pt-10 py-11 gap-11"
       >
         <!-- Text part -->
         <div class="flex flex-col lg:w-1/2 gap-y-4">
@@ -233,7 +233,7 @@
 
       <!-- Process -->
       <section
-        class="container lg:max-w-[88%] md:max-w-[88%] mb-24 text-center mx-auto gap-y-4 flex flex-col"
+        class="container lg:max-w-[88%] md:max-w-[88%] mb-24 text-center mx-auto gap-y-4 flex flex-col pb-7"
       >
         <div class="flex flex-col gap-y-4 justify-center items-center mb-4">
           <button class="btn btn-ghost bg-white rounded-3xl w-[206px]">
@@ -260,8 +260,8 @@
               />
 
               <div class="card-body">
-                <h2 class="card-title">Concept</h2>
-                <p>
+                <h2 class="card-title text-base font-semibold">Concept</h2>
+                <p class="text-lil-paragraph font-medium">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -279,8 +279,8 @@
               />
 
               <div class="card-body">
-                <h2 class="card-title">Design Process</h2>
-                <p>
+                <h2 class="card-title text-base font-semibold">Design Process</h2>
+                <p class="text-lil-paragraph font-medium">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -294,8 +294,8 @@
               <img class="w-16 ml-5 mt-3" src="assets/vision.png" alt="Shoes" />
 
               <div class="card-body">
-                <h2 class="card-title">Supervision</h2>
-                <p>
+                <h2 class="card-title text-base font-semibold">Supervision</h2>
+                <p class="text-lil-paragraph font-medium">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -313,8 +313,8 @@
               />
 
               <div class="card-body">
-                <h2 class="card-title">Budget Planning</h2>
-                <p>
+                <h2 class="card-title text-base font-semibold">Budget Planning</h2>
+                <p class="text-lil-paragraph font-medium">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -331,11 +331,11 @@
     >
       <!-- Up part -->
       <div class="flex flex-col gap-y-4 justify-center items-center mb-4">
-        <button class="btn bg-lime-300/50 rounded-3xl w-[220px]">
+        <button class="btn bg-lime-300/50 rounded-3xl max-w-[250px] text-base font-bold">
           <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
         </button>
-        <h1 class="text-4xl font-bold t">Our Latest Portfolio</h1>
-        <p class="text-prgph">
+        <h1 class="text-[2.4rem] font-bold ">Our Latest Portfolio</h1>
+        <p class="text-lil-paragraph font-medium">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
@@ -345,21 +345,19 @@
       <div class="flex flex-col gap-4">
         <!-- flex-1 -->
         <div class="flex flex-col lg:flex-row w-full gap-4 justify-center items-center">
-          <div class="w-full lg:w-[70%] flex flex-col lg:flex-row border-2 p-4 rounded-2xl justify-center items-center gap-4">
-            <div class="lg:w-[40%] w-full">
-              <img class="w-full " src="assets/img1.png" alt="" />
+          <div class="w-full lg:w-[70%] flex flex-col lg:flex-row border-2 p-4 rounded-2xl justify-center items-center gap-4 lg:h-[227px]">
+            <div class="lg:w-[40%] w-full lg:h-full">
+              <img class="w-full h-full " src="assets/img1.png" alt="" />
             </div>
             <div
-              class="text-start flex flex-col gap-y-2 lg:pl-4 lg:w-[70%] w-full "
+              class="text-start flex flex-col gap-y-2 lg:pl-4 lg:w-[70%] w-full  "
             >
-              <h1 class="text-2xl">Commercial</h1>
-              <p class="">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
+              <h1 class="text-2xl font-extrabold">Commercial</h1>
+              <p class="text-paragraph-opacity text-base font-medium">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, fugit pariatur totam esse maiores magni odit porro beatae quia vitae!
               </p>
               <a
-                class="max-w-[206px]  btn text-xl font-extrabold bg-green-500/50 rounded-3xl"
+                class="max-w-[206px]  btn text-xl font-extrabold bg-white rounded-3xl"
                 >View Details
                 <i
                   class="fa-solid fa-arrow-right -rotate-45 bg-btn-clr rounded-full p-2"
@@ -367,29 +365,32 @@
               </a>
             </div>
           </div>
-          <div class="w-full lg:w-[30%] border-2 p-4 rounded-2xl">
-            <img class="w-full" src="assets/img2.png" alt="" />
+          <div class="w-full lg:w-[30%] lg:h-[227px] border-2 p-4 rounded-2xl">
+            <img class="w-full lg:h-full" src="assets/img2.png" alt="" />
           </div>
         </div>
 
         <!-- Flex-2 -->
          <div class="flex flex-col lg:flex-row w-full gap-4 items-center justify-center">
-          <div class="lg:w-[25%] w-full">
-            <img class="w-full" src="assets/img3.png" alt="">
+          <div class="lg:w-[25%] w-full border-2 p-4 rounded-2xl justify-center items-center lg:h-[227px] md:hidden">
+            <img class="w-full h-full rounded-2xl" src="assets/house-no-3.jpg" alt="">
           </div>
-          <div class="w-full lg:w-[50%] flex flex-col lg:flex-row">
-            <div class="  w-full">
-              <img class="w-full" src="assets/img4.png" alt="" />
+          <div class="lg:w-[25%] w-full border-2 p-4 rounded-2xl justify-center items-center lg:h-[227px]">
+            <img class="w-full h-full" src="assets/img3.png" alt="">
+          </div>
+          <div class="w-full lg:w-[75%] flex flex-col lg:flex-row border-2 p-4 rounded-2xl justify-center items-center lg:h-[227px] gap-4 lg:gap-1 ">
+            <div class="  w-full lg:h-full">
+              <img class="w-full h-full" src="assets/img4.png" alt="" />
             </div>
             <div
-              class="text-start flex flex-col gap-y-2 lg:pl-4  w-full"
+              class="text-start flex flex-col  lg:pl-4  w-full gap-y-3 "
             >
-              <h1 class="text-2xl">Commercial</h1>
-              <p class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, maxime.
+              <h1 class="text-2xl font-extrabold">Commercial</h1>
+              <p class="text-paragraph-opacity font-medium text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illo autem facilis doloremque nihil excepturi.
               </p>
               <a
-                class="w-full max-w-[206px] btn text-xl font-extrabold bg-green-500/50 rounded-3xl"
+                class="max-w-[206px] lg:w-full  btn text-xl font-extrabold bg-white rounded-3xl"
                 >View Details
                 <i
                   class="fa-solid fa-arrow-right -rotate-45 bg-btn-clr rounded-full p-2"
@@ -397,8 +398,8 @@
               </a>
             </div>
           </div>
-          <div class="lg:w-[25%] w-full">
-            <img class="w-full" src="assets/img5.png" alt="">
+          <div class="lg:w-[25%] w-full border-2 p-4 rounded-2xl justify-center items-center lg:h-[227px]">
+            <img class="w-full h-full" src="assets/img5.png" alt="">
           </div>
          </div>
       </div>
