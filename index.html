@@ -64,12 +64,17 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              'form':"url('/assets/bg.jpg')",
+            },
             colors: {
               clifford: "#da373d",
               "btn-clr": "#ABEF5F",
               'lil-paragraph': "#494949",
               clr: "rgb(30, 30, 30)",
               "paragraph-opacity": "#737373",
+              'clr-footer':'#1C1C1C',
+              'clr-title': '#E9E9E9',
             },
           },
         },
@@ -327,7 +332,7 @@
 
     <!-- Challenge Part -->
     <section
-      class="container lg:max-w-[88%] md:max-w-[88%] mb-24 text-center mx-auto gap-y-4 flex flex-col px-11"
+      class="container lg:max-w-[88%] md:max-w-[88%] mb-20 text-center mx-auto gap-y-4 flex flex-col px-11"
     >
       <!-- Up part -->
       <div class="flex flex-col gap-y-4 justify-center items-center mb-4">
@@ -404,9 +409,98 @@
          </div>
       </div>
     </section>
-    <!-- Footer Section -->
-    <footer>
 
+    <!-- form -->
+    <section class="pt-10   mx-auto gap-y-4 flex flex-col px-9 bg-form bg-cover pb-10">
+      <div class="flex flex-col gap-y-4 justify-center text-center mx-auto items-center mb-4 py-4">
+        <button class="btn bg-lime-300/50 rounded-3xl max-w-[250px] text-base font-bold">
+          <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
+        </button>
+        <h1 class="text-[2.4rem] font-bold ">Our Latest Portfolio</h1>
+        <p class="text-lil-paragraph font-medium">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, <br> featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <div class="grid grid-cols-1  md:grid-cols-12 lg:w-[70%]  mx-auto lg:grid-rows-5  gap-4">
+        <div class="col-span-6 ">
+          <form action="" class="">
+            <input class="w-full  p-[1.2rem] rounded-3xl" type="text" placeholder="First Name*">
+          </form>
+        </div>
+        <div class="col-span-6">
+          <form action="" class="">
+            <input class="w-full p-[1rem] rounded-3xl" type="text" placeholder="Last Name*">
+          </form>
+        </div>
+        <div class="col-span-6 ">
+          <form action="" class="">
+            <input class="w-full  p-[1rem] rounded-3xl" type="text" placeholder="Phone Number*">
+          </form>
+        </div>
+        <div class="col-span-6">
+          <form action="" class="">
+            <input class="w-full p-[1rem] rounded-3xl" type="text" placeholder="Email*">
+          </form>
+        </div>
+        <div class="md:col-span-12 col-span-6 w-full row-span-2  h-full ">
+          
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-[1rem] rounded-3xl" placeholder="Write your message here"></textarea>
+
+      </div>
+      <div class="col-span-6 md:col-span-12 ">
+        <a
+          class="w-full btn text-xl font-extrabold bg-[#ABEF5F] rounded-3xl"
+          >View Details
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2"
+          ></i>
+        </a>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class=" bg-clr-footer pt-10">
+      <div class="container md:max-w-[88%] mx-auto text-center px-11 flex flex-col gap-4 pb-10">
+        <div class="flex justify-center items-center">
+          <a class="btn rounded-full text-base bg-btn-clr"
+                ><i class="fa-solid fa-arrow-right -rotate-45"></i
+              ></a>
+              <a class="btn btn-ghost text-3xl  text-clr-title font-bold">Rinterio</a>
+        </div>
+        <div>
+          <p class="text-paragraph-opacity">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="grid lg:grid-cols-5   text-clr-title mt-10 mb-10 gap-4gi">
+         <div class="">
+          <button class="cursor">Home</button>
+         </div>
+         <div>
+          <button class="cursor">Service</button>
+         </div>
+         <div>
+          <button class="cursor">Portfolio</button>
+         </div>
+         <div>
+          <button class="cursor">Blogs</button>
+         </div>
+         <div>
+          <button class="cursor">Contact Us</button>
+         </div>
+        </div>
+        <div>
+          <a
+          class=" btn text-xl font-extrabold bg-[#ABEF5F] rounded-3xl"
+          >View Details
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2"
+          ></i>
+        </a>
+        </div>
+      </div>
+     
       
     </footer>
   </body>
