@@ -36,28 +36,7 @@
         padding: 2px 2px;
       }
 
-      @media screen and (min-width: 1024) {
-        .about {
-          justify-content: flex-start;
-        }
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-        }
-        .grid-1 {
-          grid-column: span 4;
-        }
-      }
-      @media screen and (max-width: 1024px) {
-        .about {
-          text-align: center;
-        }
-        .grid-container {
-          display: grid;
-          grid-template-columns: 1;
-        }
-      }
+     
     </style>
 
     <script>
@@ -188,10 +167,10 @@
               We specialize in creating spaces that blend functionality with elegance, ensuring every corner feels both welcoming and purpose-driven.
             </p>
           </div>
-          <div class="card card-side bg-base-100 shadow-xl w-full px-4">
-            <figure>
-              <img src="assets/commercial.png" alt="Movie" />
-            </figure>
+          <div class="card card-side bg-base-100 shadow-xl w-full px-4 items-start">
+            
+              <img class=" max-h-[50%] pt-3" src="assets/commercial.png" alt="Movie" />
+            
             <div class="card-body">
               <h2 class="card-title font-extrabold ">
                 Commercial
@@ -202,10 +181,10 @@
             </div>
           </div>
 
-          <div class="card card-side bg-base-100 shadow-xl w-full px-4">
-            <figure>
-              <img src="assets/residential.png" alt="Movie" />
-            </figure>
+          <div class="card card-side bg-base-100 shadow-xl w-full px-4 items-start">
+            
+              <img class="max-h-[50%] pt-3" src="assets/residential.png" alt="Movie" />
+            
             <div class="card-body">
               <h2 class="card-title  font-extrabold">
                 Residential
